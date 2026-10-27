@@ -1,169 +1,157 @@
-# 📊 Marketing & Sales Analytics Dashboard
+# 📊 Marketing & Sales Analytics Dashboard — Power BI
 
-An interactive **Marketing & Sales Analytics Dashboard** built using **Microsoft Power BI** to analyze online sales data and generate meaningful business insights through data visualization and analytics.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:064E3B,50:0D9488,100:2DD4BF&height=220&section=header&text=Marketing%20Analytics&fontSize=48&fontColor=ffffff&animation=fadeIn&desc=Online%20Sales%20Intelligence%20%7C%20Power%20BI%20%7C%20DAX%20Measures%20%7C%20Power%20Query&descSize=15&descAlignY=68" width="100%" alt="Marketing Analytics Pine Waving Banner"/>
+</p>
+
+<p align="center">
+  An interactive 5-page marketing and sales business analytics dashboard built using <b>Microsoft Power BI</b> analyzing transactional sales data across regions, payment channels, and product categories to uncover commercial growth drivers.
+</p>
+
+<p align="center">
+  <a href="https://github.com/prakruthidevanga/Marketing-Sales-Analytics-Dashboard">
+    <img src="https://img.shields.io/badge/💻_Codebase-GitHub_Repository-1F2937?style=for-the-badge&logo=github&logoColor=white" alt="Source Code"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Microsoft%20Power%20BI-0D9488?style=flat-square" alt="Power BI"/>
+  <img src="https://img.shields.io/badge/ETL-Power%20Query%20M-064E3B?style=flat-square" alt="Power Query"/>
+  <img src="https://img.shields.io/badge/Modeling-DAX%20Formulas-14B8A6?style=flat-square" alt="DAX"/>
+  <img src="https://img.shields.io/badge/Format-.pbix%20Interactive%20File-2DD4BF?style=flat-square" alt=".pbix"/>
+</p>
 
 ---
 
-## 📌 Project Overview
+## 📌 Table of Contents
 
-This project focuses on analyzing online sales data to understand **sales performance, customer behavior, product performance, and business trends**.
+- [📖 Project Overview](#-project-overview)
+- [🎯 Objectives](#-objectives)
+- [✨ Key Features](#-key-features)
+- [📊 Dashboard Architecture & Views](#-dashboard-architecture--views)
+- [🛠️ Technology Stack](#️-technology-stack)
+- [📁 Repository Structure](#-repository-structure)
+- [⚙️ How to View & Explore](#️-how-to-view--explore)
+- [🔮 Future Enhancements](#-future-enhancements)
+- [🤝 Contributing](#-contributing)
+- [👩‍💻 Author & Accreditations](#-author--accreditations)
 
-The dashboard transforms raw sales data into interactive visualizations and KPIs that can help businesses monitor performance and identify areas for improvement.
+---
+
+## 📖 Project Overview
+
+Understanding online customer acquisition channels, product return patterns, and revenue contribution across territories is vital for marketing resource allocation. Raw sales transactions stored in spreadsheets provide little immediate visibility into real business performance.
+
+The **Marketing & Sales Analytics Dashboard** provides an executive data visualization suite that ingests multi-attribute sales transactions, performs data transformation in **Power Query**, and authors **10+ DAX measures** to track profitability, order fulfillment velocity, and customer purchasing habits across global markets.
+
+📊 **Core Mission:** Provide clear, interactive business intelligence to guide marketing investments and retail inventory distribution.
 
 ---
 
 ## 🎯 Objectives
 
-The main objectives of this project are to:
-
-* Analyze overall sales performance
-* Identify important sales trends
-* Understand product and category performance
-* Analyze customer purchasing behavior
-* Track key business KPIs
-* Identify patterns in online sales data
-* Present business insights through interactive dashboards
+- 📈 **Evaluate Sales Velocity:** Track daily, monthly, and quarterly revenue volume across 240+ multi-category transactions.
+- 🛍️ **Analyze Product Margins:** Segment inventory into high-volume vs. high-margin merchandise.
+- 👥 **Examine Payment & Channel Trends:** Identify popular transaction methods across Credit Cards, PayPal, and Bank Transfers.
+- 🗺️ **Territory Performance:** Map geographic distributions to identify underserved markets.
 
 ---
 
-## 🛠️ Tools & Technologies
+## ✨ Key Features
 
-| Tool                   | Purpose                                   |
-| ---------------------- | ----------------------------------------- |
-| **Microsoft Power BI** | Dashboard creation and data visualization |
-| **Power Query**        | Data cleaning and transformation          |
-| **DAX**                | KPI and analytical calculations           |
-| **CSV**                | Source dataset                            |
+### 1. 📈 Multi-Page Executive Views
+Structured interactive report pages covering overall revenue, product category shares, payment distribution, and temporal performance.
 
----
+### 2. 🧮 10+ Custom DAX Measures
+Formulated key metrics including Average Order Value ($AOV$), Unit Contribution Margins, Return Rate %, and Sales Growth.
 
-## 📊 Dashboard
-
-The Power BI dashboard provides an interactive view of the online sales data through:
-
-* 📈 Sales performance analysis
-* 🛍️ Product and category analysis
-* 👥 Customer-related insights
-* 📊 KPI cards
-* 📅 Sales trend analysis
-* 🔎 Interactive filters and slicers
-* 📋 Detailed analytical visuals
-
-Users can interact with the dashboard to explore different aspects of the sales data.
+### 3. 🔎 Dynamic Drill-Through Slicers
+Contextual date range, region, and product category filters that update all visual containers synchronously.
 
 ---
 
-## 🔄 Data Analysis Process
+## 📊 Dashboard Architecture & Views
 
-The project follows a structured data analytics workflow:
+```mermaid
+flowchart LR
+    A["Source CSV Data (Online Sales Data.csv)"] --> B["Power Query Data Cleansing & Type Standardization"]
+    B --> C["Data Modeling & Relationship Setup"]
+    C --> D["Custom DAX Measures & Calculations"]
+    D --> E["Interactive Visual Report (.pbix) & PDF Summary"]
+```
+
+---
+
+## 🛠️ Technology Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mysql,git,github,vscode&theme=dark" alt="Marketing Stack"/>
+</p>
+
+| Component | Technology | Implementation Role |
+| :--- | :--- | :--- |
+| **BI Tool** | Microsoft Power BI Desktop | Dashboard layout, charts, and interactive filtering |
+| **ETL Engine** | Power Query | Cleansing, currency normalization, and column derivations |
+| **Formulas** | DAX | Dynamic KPIs, ratios, and time-intelligence aggregations |
+| **Documentation** | Adobe PDF Report | Formal academic and technical project deliverable |
+
+---
+
+## 📁 Repository Structure
 
 ```text
-Raw Sales Data
-      ↓
-Data Cleaning
-      ↓
-Data Transformation
-      ↓
-Data Modeling
-      ↓
-DAX Calculations
-      ↓
-Data Visualization
-      ↓
-Business Insights
+Marketing-Sales-Analytics-Dashboard/
+├── Online sales data.pbix                              # Complete Power BI interactive model
+├── Online Sales Data.csv                               # Clean transactional source dataset
+├── DWM_Project_Retport_Pakruthi_BR_(Online_Sales).pdf   # Formal project and analytical report
+└── README.md                                           # Project documentation
 ```
 
 ---
 
-## 📈 Key Analytics Areas
+## ⚙️ How to View & Explore
 
-### 💰 Sales Performance
-
-Analyze sales performance and identify trends across the available sales data.
-
-### 🛍️ Product Analysis
-
-Understand which products and categories contribute to overall sales performance.
-
-### 👥 Customer Analysis
-
-Explore customer purchasing patterns and identify meaningful trends in customer behavior.
-
-### 📅 Time-Based Analysis
-
-Analyze sales patterns over time to understand changes in business performance.
-
-### 🎯 KPI Monitoring
-
-Use Power BI measures and visualizations to track important business performance indicators.
+1. Install [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/prakruthidevanga/Marketing-Sales-Analytics-Dashboard.git
+   cd Marketing-Sales-Analytics-Dashboard
+   ```
+3. Open `Online sales data.pbix` in Power BI Desktop to interact with the visualizations!
 
 ---
 
-## 🧮 Data & DAX
+## 🔮 Future Enhancements
 
-The project uses **DAX (Data Analysis Expressions)** to create analytical measures and transform raw data into meaningful business metrics.
-
-Power Query was used for preparing the dataset before building the dashboard.
-
+- 🔮 **Predictive Sales Forecasting:** Add exponential smoothing forecasts for next-quarter orders.
+- 🔄 **Real-Time Database Connector:** Link dashboard directly to an active MySQL cloud database.
 
 ---
 
-## 🚀 How to Use
+## 🤝 Contributing
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/prakruthidevanga/Marketing-Sales-Analytics-Dashboard.git
-```
-
-### 2. Open the Power BI file
-
-Open:
-
-```text
-Online sales data.pbix
-```
-
-using **Microsoft Power BI Desktop**.
-
-### 3. Explore the dashboard
-
-Use the available visuals, filters, and slicers to interact with the sales analysis.
+Feedback and analytical enhancements are welcome! Feel free to fork and open a pull request.
 
 ---
 
-## 📚 Skills Demonstrated
+## 👩‍💻 Author & Accreditations
 
-* Power BI
-* Power Query
-* DAX
-* Data Cleaning
-* Data Transformation
-* Data Visualization
-* Business Intelligence
-* Sales Analytics
-* Marketing Analytics
-* KPI Analysis
-* Business Data Analysis
+**Prakruthi B R**  
+*BCA Student specializing in Artificial Intelligence & Machine Learning*  
+*Alliance University, Bengaluru (CGPA: 9.60)*  
+*GeeksforGeeks Campus Mantri (2026)*
+
+- 💻 **GitHub:** [@prakruthidevanga](https://github.com/prakruthidevanga)
+- 🔗 **LinkedIn:** [Prakruthi BR](https://linkedin.com/in/prakruthi-br)
+- 🌐 **Portfolio:** [prakruthidevanga.github.io](https://prakruthidevanga.github.io/)
+- 📬 **Email:** [prakruthibr2006@gmail.com](mailto:prakruthibr2006@gmail.com)
 
 ---
 
-## 👩‍💻 Project Information
+<p align="center">
+  <b>📊 Turning transactional records into strategic commercial decisions.</b>
+</p>
 
-**Project:** Marketing & Sales Analytics Dashboard
-**Role:** Data Analyst
-**Tool:** Microsoft Power BI
-**Dataset:** Online Sales Data
-**Developer:** Prakruthi B R
-
----
-
-## 🌟 Project Purpose
-
-This project demonstrates how **raw online sales data can be transformed into an interactive business intelligence dashboard** that makes complex data easier to understand and supports data-driven business analysis.
-
----
-
-## 🔗 Repository
-
-**GitHub:** [Marketing & Sales Analytics Dashboard](https://github.com/prakruthidevanga/Marketing-Sales-Analytics-Dashboard)
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:064E3B,50:0D9488,100:2DD4BF&height=110&section=footer" width="100%" alt="Marketing Analytics Footer"/>
+</p>
